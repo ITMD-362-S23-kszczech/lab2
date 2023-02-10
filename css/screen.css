@@ -1,0 +1,52 @@
+html {
+    line-height:2em;
+}
+
+input {
+    margin-bottom:0.5em;
+    display:block;
+}
+input.data {
+    width:100%;
+}
+input.submit{
+    float:right;
+    height:2.5em;
+    width:10%;
+}
+
+div.form-questions {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:auto;
+    padding-left:1em;
+    padding-right:1em;
+}
+
+div:not(.form-questions) {
+    width:30%;
+    padding:0.5em;
+}
+
+fieldset {
+    width:75%;
+    margin:auto;
+}
+
+@media screen and (max-width:1000px) {
+    div.form-questions {
+        flex-direction: column;
+    }
+    div:not(.form-questions) {
+        width:100%;
+    }
+    input.submit {
+        width:50%;
+        margin:auto;
+        float:initial;
+    }
+    fieldset{
+        width:90%;
+    }
+}
